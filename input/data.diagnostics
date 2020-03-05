@@ -1,0 +1,16 @@
+# diagnostics for diffusivity tensor
+ &diagnostics_list
+  diag_mnc=.FALSE.,
+  frequency(1) = 86400.,
+   filename(1) = 'momentum',
+   fields(16,1) = 'USidDrag', 'VSidDrag',
+                 'Um_Diss ', 'Vm_Diss ',
+                 'Um_ImplD', 'Vm_ImplD',
+                 'Um_Advec', 'Vm_Advec',
+                 'Um_Cori ', 'Vm_Cori ',
+                 'Um_dPhiX', 'Vm_dPhiY',
+                 'Um_Ext  ', 'Vm_Ext  ',
+                 'botTauX ', 'botTauY ',
+ & 
+ &DIAG_STATIS_PARMS
+ &

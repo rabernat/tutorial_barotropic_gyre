@@ -1,17 +1,18 @@
 # Model parameters
 # Continuous equation parameters
  &PARM01
- viscAh=4.E2,
+ viscAh=100.,
  f0=1.E-4,
  beta=1.E-11,
  rhoConst=1000.,
  gBaro=9.81,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
+ bottomDragLinear=1E-03,
 # momAdvection=.FALSE.,
  tempStepping=.FALSE.,
  saltStepping=.FALSE.,
- globalFiles=.TRUE.,
+ useSingleCpuIO=.TRUE. 
  &
 
 # Elliptic solver parameters
